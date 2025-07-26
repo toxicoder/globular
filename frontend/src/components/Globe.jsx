@@ -3,10 +3,7 @@ import { useFrame, useLoader } from '@react-three/fiber';
 import { Sphere, Html } from '@react-three/drei';
 import * as THREE from 'three';
 
-// Import textures
-import dayTextureImg from '../assets/earth_day.jpg';
-import nightTextureImg from '../assets/earth_night.jpg';
-import specularTextureImg from '../assets/earth_specular.jpg';
+import { TextureLoader } from 'three';
 
 // Function to convert latitude/longitude to 3D coordinates
 const latLonToVector3 = (lat, lon, radius) => {
@@ -44,10 +41,9 @@ function Globe({ cities }) {
   const [hoveredCity, setHoveredCity] = useState(null);
 
   // Load textures
-  const [dayTexture, nightTexture, specularTexture] = useLoader(THREE.TextureLoader, [
-    dayTextureImg,
-    nightTextureImg,
-    specularTextureImg,
+  const [dayTexture, nightTexture] = useLoader(TextureLoader, [
+    '/earth_day.jpg',
+    '/earth_night.jpg',
   ]);
 
   // Earth's axial tilt in radians

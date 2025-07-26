@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Scene from './components/Scene';
+import Scene from './components/Scene.jsx';
 import './index.css';
 
 // A simple database of cities and their coordinates
