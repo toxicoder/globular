@@ -25,6 +25,13 @@ This project is a full-stack web application that displays a 3D world clock with
 -   **City Time Markers:** Add and remove city markers to see the local time.
 -   **Full-Stack & Containerized:** Built with React/Three.js on the frontend, Node.js/Express on the backend, and containerized with Docker for easy deployment.
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+-   [Docker](https://docs.docker.com/get-docker/)
+-   [Docker Compose](https://docs.docker.com/compose/install/)
+
 ## How to Use
 
 1.  **Clone the repository:**
@@ -37,12 +44,17 @@ This project is a full-stack web application that displays a 3D world clock with
     ```bash
     docker-compose up --build
     ```
+    > **Note:** The initial build process may take a few minutes.
 
 3.  **Access the application:**
     -   The frontend will be available at `http://localhost:80`.
     -   The backend API will be running on `http://localhost:3001`.
 
-The application will start, and you can interact with the 3D globe immediately.
+Once the application is running, you can:
+-   **Rotate the globe:** Click and drag the globe to rotate it.
+-   **Zoom in and out:** Use the scroll wheel to zoom in and out.
+-   **Add a city:** Click on a city to add a marker and see the local time.
+-   **Remove a city:** Click on an existing marker to remove it.
 
 ## API Endpoints
 
