@@ -42,8 +42,8 @@ function Globe({ cities }) {
 
   // Load textures
   const [dayTexture, nightTexture] = useLoader(TextureLoader, [
-    '/earth_day.jpg',
-    '/earth_night.jpg',
+    'earth_day.jpg',
+    'earth_night.jpg',
   ]);
 
   // Earth's axial tilt in radians
